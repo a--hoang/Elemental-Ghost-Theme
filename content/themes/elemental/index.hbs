@@ -1,0 +1,37 @@
+{{!< default}}
+
+        <div class="container clearfix">
+          <main role="main" class="content">
+              {{#foreach posts}}  
+              <article class="{{post_class}} post">
+                <h2><a href="{{url}}" title="{{title}}">{{title}}</a></h2>
+                <footer class="post-info">Posted on <span class="post-meta"><time datetime="{{date published_at format="YYYY-MM-DD"}}">{{date published_at format="Do MMMM YYYY"}}</time> {{tags separator=", " prefix="Tagged in "}}</span></footer>
+                
+                <p>{{excerpt characters="600"}}&hellip;</p>
+                
+                <a href="{{url}}" title="{{title}}">Read more &raquo;</a>
+              </article>
+              {{/foreach}}
+
+              {{pagination}}
+             
+          </main>
+
+          <aside class="author">
+            
+            <img class="profile-image" src="{{asset "img/profile-image.jpg"}}" alt="profile picture" width="140" height = "140"/>
+            <p class="name">by <strong>Andrew Hoang</strong></p>
+            <p class="address">Boston, Massachusetts</p>
+            <p class="link"><a href="http://andrewhoang.me" title="Andrew Hoang - Developer">andrewhoang.me</a></p>
+
+            <ul class="social">
+              <li><a class="icon-linkedin" href="http://www.linkedin.com/pub/andrew-hoang/78/489/38a" title="Connect with me on LinkedIn"></a></li>
+              <li><a class="icon-github" href="https://www.github.com/a--hoang" title="Check out my work on Github"></a></li>
+              <li><a class="icon-rss" href="{{@blog.url}}/rss/" title="RSS Feed"></a></li>
+              <li><a class="icon-instagram" href="http://www.instagram.com/fharriscia" title="I'm not photogenic."></a></li>
+            </ul>
+          </aside>
+          <aside class="twitter">
+          <a class="twitter-timeline" href="https://twitter.com/ahoang18" data-widget-id="562727952312709122">Tweets by @ahoang18</a>
+        </aside>
+        </div>

@@ -1,0 +1,263 @@
+<html>
+    <head>
+        <style type="text/css">
+            body {
+              font-family: Calibri;
+              font-size: 14px;
+              padding: 0 4em 1.5em 4em;
+            }
+
+            a {
+              color: black;
+              text-decoration: none;
+              border-bottom: 1px dashed;
+            }
+
+            p {
+              margin-top: 0;
+              margin-bottom: 0;
+              line-height: 1.6em;
+            }
+
+            header, footer {
+              text-align: center;
+            }
+
+            header ul {
+              list-style: none;
+              padding: 0;
+            }
+
+            header li {
+              display: inline-block;
+            }
+
+            header li::after{
+              content: " |";
+            }
+
+            header li:last-child::after {
+              content: "";
+            }
+
+            header .label {
+              font-style: italic;
+            }
+
+            header .label::after {
+              content: ": ";
+            }
+
+            h1, h2, h3, h4 {
+              font-weight: normal;
+              margin: 0;
+            }
+
+            .container .label {
+              /*text-decoration: underline;*/
+              border-bottom: 1px solid;
+            }
+
+            section {
+              margin: 1.3em 0;
+            }
+
+            h2 {
+              /*text-decoration: underline;*/
+              font-style: italic;
+              /*font-weight: bold;*/
+              border-bottom: 1px solid grey;
+              margin-bottom: .5em;
+
+              /*font-family: Trebuchet MS;*/
+            }
+
+            .container ul {
+              margin-top: .1em;
+              margin-bottom: .1em;
+              padding-left: 20px;
+            }
+
+            .entry {
+              margin: .75em 0;
+            }
+
+            h3 {
+              display: inline-block;
+              font-weight: bold;
+              /*text-decoration: underline;*/
+              /*border-bottom: 1px solid;*/
+            }
+
+            .entry .role {
+              /*font-style: italic;*/
+            }
+
+            .entry .role::before {
+              content: "(";
+            }
+
+            .entry .role::after {
+              content: ")";
+            }
+
+            .entry .loc {
+              font-style: italic;
+            }
+
+            .entry .date {
+              float: right;
+            }
+
+            .entry .des {
+              margin-top: .1em;
+              font-style: italic;
+            }
+
+            .resume-project .project-name {
+              /*text-decoration: underline;*/
+              /*border-bottom: 1px solid;*/
+              font-weight: bold;
+              line-height: 1.6em;
+            }
+
+            .resume-project h3 {
+              font-size: 100%;
+            }
+
+            .meta {
+            }
+
+        </style>
+    </head>
+    
+    <body>
+        <header>
+            <h1><a href="http://www.andrewhoang.me">Andrew Hoang</a></h1>
+            <ul>
+                <li><span class='label'>email</span>ahoang18@bu.edu</li>
+                <li><span class='label'>github</span><a href="https://github.com/a--hoang">a--hoang</a></li>
+                <li><span class='label'>website</span><a href="http://www.andrewhoang.me">andrewhoang.me</a></li>
+            </ul>
+        </header>
+        
+        <div class="container">
+            <section class="resume-edu">
+                <h2>Education</h2>
+                <div class="entry">
+                    <h3>Boston University</h3>
+                    <span class='loc'>Boston, Massachusetts</span>
+                    <span class='date'>August 2014 - (May 2018)</span>
+                    <p class="des">Pursuing a Bachelors of Science in Computer Engineering</p>
+                    <ul>
+                        <li><p><span class="label">GPA:</span> 4.0 </p></li>
+                    </ul>
+                </div>
+                
+            </section>
+            
+            <section class="resume-skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li><p><span class="label">Languages:</span> Java, C#</p></li>
+                    <li><p><span class="label">Expected Languages (spring 2015):</span> HTML5/CSS3, SQL, C++</p></li>
+                    <li><p><span class="label">Image Editing:</span> Adobe Photoshop, Adobe Lightroom</p></li>
+                    <li><p><span class="label">Other:</span> Woodworking, Small Crafts</p></li>
+                </ul>
+                
+            </section>
+            
+            <section class="resume-work">
+                <h2>Work Experience</h2>
+                <div class="entry">
+                    <h3>Dr. Sahar Sharifzadeh, Boston University Electrical and Computer Engineering</h3>
+                    <span class="role">Research Assistant</span>
+                    <span class='loc'>Boston, Massachusetts</span>
+                    <span class='date'>October 2014 - Present</span>
+                    <p class="des">Tenure-track professor researching and modeling the electronic, magnetic, and structural properties of materials through principles of quantum mechanics</p>
+                    <ul>
+                        <li><p>Currently researching and modeling Forster Resonance Energy Transfer (FRET) in organic molecules for quantitative applicaiton in solar cells.</p></li>
+                        <li><p>Use MATLAB to develop Monte-Carlo simulations to determine optimum Forster radius for electron dissociation/energy transfer.</p></li>
+                    </ul>
+                </div>
+                
+                <div class="entry">
+                    <h3>Dean of Students Office, Boston University</h3>
+                    <span class="role">Program and Operations Assistant</span>
+                    <span class='loc'>Boston, Massachusetts</span>
+                    <span class='date'>August 2014 - Present</span>
+                    <p class="des">Boston University's Student support and outreach office, ensuring academic and social success of students</p>
+                    <ul>
+                        <li><p>Handle administrative duties for Deans of Students, including telephone, email and note taking duties</p></li>
+                    </ul>
+                </div>
+                
+                <div class="entry">
+                    <h3>A&amp;A Photography</h3>
+                    <span class="role">Co-founder, Photographer</span>
+                    <span class='loc'>Acton, Massachusetts</span>
+                    <span class='date'>December 2012 - June 2014</span>
+                    <p class="des">Started a small photography business focusing on sports, event
+                    and portrait photography</p>
+                    <ul>
+                        <li><p>Reached out on social media networks including Facebook, Flickr and Twitter and established a footing in the local community.</p></li>
+                    </ul>
+                </div>
+                
+            </section>
+            
+            <section class="resume-project">
+                <h2>Projects</h2>
+                
+                <div class ="entry">
+                  <h3><a href="http://andrewhoang.me/pennapps-2015/">Reservoir</a></h3>
+                  <span class='role'>Pebble C, Adobe Illustrator</span>
+                  <span class='loc'>PennApps Winter 2015 Hackathon</span>
+                  <span class='date'>January 2015</span>
+                  <ul>
+                    <li><p>Designed and implemented a water-tracking app in PebbleC for the Pebble smartwatch that tracks water consumption and reminds users to hydrate. Deployed to the Pebble app store January 2015.</p></li>
+                  </ul>
+                </div>
+
+                <div class="entry">
+                    <h3><a href="http://a--hoang.github.io">Old Website</a></h3>
+                    <span class='role'>HTML5, CSS3, BootStrap and Jekyll</span>
+                    <span class='loc'>Boston, Massachusetts</span>
+                    <span class='date'>November 2014</span>
+                    <ul>
+                        <li><p>Designed and implemented personal website using Github’s Jekyll site generator, BootStrap and HTML/CSS design principles</p></li>
+                    </ul>
+                </div>
+                
+                <div class="entry">
+                    <h3><a href="https://github.com/a--hoang">KinectPong</a></h3>
+                    <span class='role'>C# and Microsoft Kinect 2.0 SDK</span>
+                    <span class='loc'>BU ENG EK131 Class</span>
+                    <span class='date'>September 2014</span>
+                    <ul>
+                        <li><p>Used Kinect Library and pong concepts to build a pong clone controlled by user hand gestures.</p></li>
+                    </ul>
+                </div>
+                
+                <div class="entry">
+                    <h3><a href="http://mmmyep.com">mmmyep.com</a></h3>
+                    <span class='role'>PHP, HTML5, CSS3, Javascript</span>
+                    <span class='loc'>HackMIT Blueprint Hackathon</span>
+                    <span class='date'>February 2014</span>
+                    <ul>
+                        <li><p>Built simple PHP and Javascript web application at first hackathon.</p></li>
+                        <li><p>Crapfinder, located at mmmyep.com, is a simple web application that suggests items based on a dollar input.</p></li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section class="resume-awards">
+                <h2>Activities and Awards</h2>
+                <ul>
+                    <li><p>Goalkeeper for the Boston University Terriers Men’s Varsity soccer program (NCAA Division 1)</p></li>
+                    <li><p>Recipient of Lutchen Fellowship from the BU College of Engineering, one of 10 such scholarships awarded per class for academic excellence and research.</p></li>
+                    <li><p>2013 Bausch &amp; Lomb Science and Mathematics Award by the University of Rochester</p></li>
+                </ul>
+            </section>
+    </body>
+</html>

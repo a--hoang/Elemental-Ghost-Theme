@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        {{! Document Settings }}
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        {{! Page Meta }}
+        <title>{{@blog.title}}</title>
+        <meta name="description" content="{{@blog.description}}">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700|Noto+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{{asset "css/styles.css"}}">
+        <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+        <style type="text/css">
+              #mc_embed_signup{
+                background:#474747; 
+                clear:left; 
+              }
+              #mc_embed_signup_scroll {
+              width: 50%;
+              margin: 0 auto;
+              }
+              #mc_embed_signup input.button {
+                  margin: 0 auto;
+              }
+              #mc_embed_signup input.email{
+                margin: 10px auto;
+              }
+              #mc_embed_signup label{
+                margin: 0 auto;
+                text-align: center;
+                padding-bottom: 0px;
+              }
+        </style>
+        {{ghost_head}}
+        <script src="{{asset "js/vendor/modernizr-2.8.0.min.js"}}"></script>
+    </head>
+
+    <body class="{{body_class}}">
+        <!--[if lt IE 8]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header class="site-header">
+         
+          <h2><a class="logo ir" href="{{@blog.url}}" title="{{@blog.title}}">{{@blog.title}}</a></h2>
+
+        </header>
+
+        <div id="hmenu"> 
+          <ul> 
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/tag/blog">Blog</a></li> 
+            <li><a href="/tag/projects">Projects</a></li> 
+            <li><a href="/contact">Contact</a></li> 
+            <li><a href="/assets/statics/resume/index.html">Resume</a></li> 
+          </ul>   
+        </div> 
+       
+       
+           {{{body}}}
+
+        <footer class="main-footer">
+          <div class="container clearfix">
+
+            <!-- Begin MailChimp Signup Form -->
+            
+            <div id="mc_embed_signup">
+              <form action="//andrewhoang.us10.list-manage.com/subscribe/post?u=42776c0e46dc534fb16fdc25e&amp;id=7460d5c888" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                  <div id="mc_embed_signup_scroll">
+                    <label for="mce-EMAIL">Subscribe to Andrew's Weekly Updates</label>
+                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;">
+                      <input type="text" name="b_42776c0e46dc534fb16fdc25e_7460d5c888" tabindex="-1" value="">
+                    </div>
+                    <div class="clear">
+                      <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                    </div>
+                  </div>
+              </form>
+            </div>
+
+            <!--End mc_embed_signup-->
+           
+              <a class="icon-rss" href="{{@blog.url}}/rss/" title="RSS Feed"></a>
+              <p>All content copyright <a href="http://andrewhoang.me" title="Andrew Hoang - Developer">Andrew Hoang</a> &copy; 2015. All rights reserved.</p>
+              <p>Proudly published with Ghost. Development by <a href="http://andrewhoang.me" title="Andrew Hoang - Developer">Andrew Hoang</a>. Inspiration and theme from <a href="http://rriegger.com" title="Raphael Riegger">Raphael Riegger.</a></p>
+           
+          </div>
+        </footer>
+
+        {{ghost_foot}}
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="{{asset "js/vendor/jquery-1.11.0.min.js"}}"><\/script>')</script>
+        <script src="{{asset "js/plugins.js"}}"></script>
+        <script src="{{asset "js/main.js"}}"></script>
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+              ga('create', 'UA-58033732-1', 'auto');
+              ga('send', 'pageview');
+        </script>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </body>
+</html>
